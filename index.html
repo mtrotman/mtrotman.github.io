@@ -1,41 +1,47 @@
 <!DOCTYPE html>
-<html> 
-<!-- This website is a virtual gallery for my artwork. It shows and describes 5 pieces I created and provides links to other websites which display my work//-->
+<html lang="en"> 
+<!-- This website is a virtual gallery for my artwork. It shows and describes 5 pieces I created and provides links to other websites which display my work. I drew inspiration from this webpage. https://samanthakeelysmith.com/aerial// -->
 <head>  
-<!-- rel tag specifies the realationship between the current document and the linked document.-->
-<link rel="stylesheet" href="Project2.css">
-<title>"Megan's Virtual Art Gallery"</title> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<!-- The viewport is the user's visible area of a web page.
- It varies with the device - it will be smaller on a mobile phone than on a computer screen.-->
+<!-- The rel tag specifies the relationship between the current document and the linked document(in this case Project2.css. -->
+	<link rel="stylesheet" href="Project2.css">
+	<title>"Megan's Virtual Art Gallery"</title>  
+<!-- Charater encoding is defined -->
+	<meta charset="utf-8">
+<!-- Viewport is included. The viewport is the user's visible area of a web page. --> 
+<!-- width=device-width - this sets the width of the page to be the width of the device on which it is loaded. --> 
+<!-- initial-scale=1.0 - sets the initial zoom level when the page is initially loaded. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>  
 
-<!-- Vertical Navigation Bar. - Allows the user to navigate through the website--> 
-<!-- ### Create a webpage for each link nd update the content###-->
-
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="About.html">About</a>
-  <a href="#contact">Contact</a>
+<!-- Top Horizontal Navigation Bar - Allows the user to navigate through the website. --> 
+<!-- The Navigation Bar contains Home (Main Gallery Page, About Page and Contact information Page. -->
+<div class="topnav"> 
+<!--Home Page - the main artwork is contained here. -->
+	<a class="active" href="#home">Home</a> 
+ <!--About Page - contains information about the artist-->
+	<a href="About.html">About</a> 
+ <!--Contact Page - contains contact information for the artist-->
+	<a href="Contact.html">Contact</a>
 </div>
 
-
+<!--H1 is the header of the Home Page. It has the largest size of all the headers-->
 <h1>Welcome to Megan's Virtual Art Gallery</h1> 
-<!-- declares this paragraph 1. Referred to in Css sheet. Id in this case is unique-->
-<p id="para1"> This art gallery displays five pieces which I think represent myself and the way I relate with the world around me 
-Please take your time to explore my gallery and learn about the creative process and inspiration behind each piece.</p> 
-<p> Please note, this is the first website I have ever coded a website. Though I found it difficult, I have noticed there are many similarities 
+<!-- Description of the work exhibited in the Home Page of the website-->
+<p>This art gallery displays five pieces which I think represent myself and the way I relate with the world around me 
+Please take your time to explore my gallery and learn about the creative process and inspiration behind each piece.Please note, this is the first website I have ever coded a website. Though I found it difficult, I have noticed there are many similarities 
 between using html to build a website and creating a piece of art. I will touch on this briefly in each of the captions of my work below.</p>
-
+<!-- 
+Inspiration/source code for creating a smooth Horizontal Scrolling Bar https://codepen.io/colinlord/pen/oZNoOO. 
+The goal was to make each of the divs that contained an art piece scroll horizontally as if one was actually walking through an art gallery. 
+I found it a bit difficult to implement. 
+In the future, I would like just allow the user to click the each piece to view the artwork after it instead of having to scroll. 
+ -->
 <body> 
-
-<!--Creating  asmooth Horizontal Scrolling Bar https://codepen.io/colinlord/pen/oZNoOO--> 
-<!-- The goal is to make each of the divs scroll horizontally. -->
 <div class="scrolling-wrapper">  
 	<div class="card"> 
 		<figure>
-			<img src="Eye.jpg" alt="Drawing of an Eye".>
-			
+			<img src="Eye.jpg" alt="Drawing of an Eye"> 
+<!-- The cite tag was used to describe a reference to a cited artwork-->
 			<figcaption> <cite> Eyeing the Universe. Pencil. 2015 </cite><p>This piece was inspired by the Andromeda Galaxy. After a visit to the Harry Bayley Observatory in Barbados with my Grand parents, I decided to create this drawing.  I never knew much about space before the visit. However, the visit opened my eyes and sparked my curiosity for what lay beyond Earth’s atmosphere. 
 I feel the same way about my programming courses. It often feels as though there is an entire universe to learn about regarding the syntax and semantics of each language.
 			</p> </figcaption> 
@@ -46,7 +52,6 @@ I feel the same way about my programming courses. It often feels as though there
 	<div class="card">
 		<figure>
 			<img src="Flower1.jpg" alt="Drawing of a Flower">
-			
 			<figcaption> 
 			<cite> Double Hibiscus. Pen. 2014. </cite>
 			<p> I enjoyed completing this study of the Hibiscus Flower. The many intricate folds of the beautiful petals made it challenging to represent on paper. I often lost my position of the exact petal I was currently drawing as I looked down at my work and back at the flower multiple times. It often took a few minutes to find the same petal again. 
@@ -59,16 +64,14 @@ I find I am the same when writing HTML or CSS. For example, when creating this w
 	<div class="card">
 		<figure>
 			<img src="Lion.jpg" alt="Drawing of a Lion">
-			
-			<figcaption> <cite> Lion. Pencil. 2015. </cite><p> This piece took 2 days to draw with a mechanical pencil. It was drawn to emphasize the lion’s mane and fur. Honestly, sometimes it is quite easy to become too involved in the task at hand. This certainly happened when I drew this piece. Furthermore, this happened when selecting the CSS to style this page. This experience taught me it takes time and experience to design a webpage that fits your idea but is also functional. </figcaption>  
-		</p></figure> 
+			<figcaption> <cite> Lion. Pencil. 2015. </cite><p> This piece took 2 days to draw with a mechanical pencil. It was drawn to emphasize the lion’s mane and fur. Honestly, sometimes it is quite easy to become too involved in the task at hand. This certainly happened when I drew this piece. Furthermore, this happened when selecting the CSS to style this page. This experience taught me it takes time and experience to design a webpage that fits your idea but is also functional.</p> </figcaption>  
+		</figure> 
 	</div>
 		
 
 	<div class="card">
 		<figure>
 			<img src="Mountain.jpg" alt="Drawing of a Mountain">  
-			
 			<figcaption> <cite> Mountain behind Grenfell Campus. Pen. 2015.  </cite><p> This drawing was done in my first year of university of a journal I kept. I often keep journals to record, remember and reflect on experiences I have had. I find creating comments in HTML is like this. They help me to understand the code I used and allow me to keep track of improvements I have made. </p></figcaption>  
 		</figure> 
 	</div>
@@ -77,7 +80,6 @@ I find I am the same when writing HTML or CSS. For example, when creating this w
 	<div class="card">
 		<figure>
 			<img src="Music.jpg" alt="Drawing of a woman">  
-			
 			<figcaption> <cite> Music. Pen and pencil. 2016. </cite><p> This image was inspired by my love for the violin. I used a variety of shading techniques on top of the original pen drawing to acieve the particular tone. The combination of techniques I used remind me of the way CSS and HTML are combined to create a final webpage. The pen provides the structure (HTML) whilst the pencil shading adds the style(CSS).</p></figcaption>  
 		</figure> 
 	</div> 
@@ -87,6 +89,5 @@ I find I am the same when writing HTML or CSS. For example, when creating this w
 <!-- target ="_blank" allows new window to be opened after clicking link-->
 Thank you for visiting my webpage! If you really like my artwork, you can find more  <a id="link1" href="https://www.deviantart.com/indigokid17//" target ="_blank"> here </a> and <a id="link2" href="https://www.deviantart.com/indigokid16" target ="_blank"> here. </a>
 </p>
-<!-- use <br> for line breaks>
 </body>
 </html>

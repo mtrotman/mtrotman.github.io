@@ -1,0 +1,123 @@
+
+/* Sets colour of background, overall fontsize and style used throughout the website*/
+body {
+	background-color:#e4ed66;  
+	font-family: Georgia, serif; 
+	font-size:20px; 
+	text-align: center;
+} 
+
+/* Top Navigation Bar formatting of website*/
+.topnav { 
+	display: block;  
+	background-color: pink; 
+	padding: 10px; 
+	text-align: center; 
+	font-weight: bold;  
+	color: white;
+}
+
+/*The child selector > selects all elements that are the children of a specified element. In this case all p elements that are the children of the <figcaption> element*/
+figcaption>p { 
+/* white-space specifies how white-space inside an element is handled, pre-wrap - white space is preserved by the browser. Text will wrap when necesary, and on line breaks*/
+white-space:pre-wrap; 
+/* max-width - defines the maximum width of an element, in this case 700 px. max-width overrides the width property*/
+max-width:700px; 
+/*Sets the font for this caption*/
+font-family: Georgia, serif;
+}
+
+/* selects and styles all elements with class = "scrolling-wrapper".*/
+.scrolling-wrapper { 
+/* Specifies that content is clipped and a scroll bar is added*/
+  overflow-x: scroll; 
+/* Specifies that the content is clipped and no scrolling mechanism is provided*/
+  overflow-y: hidden; 
+/* Text will never wrap to the next line.*/
+  white-space: nowrap;  
+/* Displays an element as an inline element. Allows the user to set a width and height on the element*/
+  display: inline-block; 
+  width:100%;
+} 
+  
+ /*Selects and styles all elements with class = "card"*/ 
+ .card {
+    display: inline-block;   
+/* vertical-align sets the alignment of an inline-block to the top.*/
+	vertical-align:top;	
+		
+ }
+/*Selects and styles all img tags to have the following specfications*/
+img {  
+/* the width if the img will be 100% of its containing block*/
+width: 100%; 
+max-width: 600px;
+height: auto; 
+max-height: 650px; 
+border: 30px solid white; 
+border-radius: 6px; 
+padding: 30px;
+}   
+
+/* Headings Formatting*/
+h1 { 
+	font-size: 50px;  
+	background-color: purple; 
+	color: white;  
+	text-align: center;
+}
+	
+
+.aboutartistheading {  
+	font-size: 40px; 
+	text-align: center; 
+	background-color: pink;
+	color: white; 
+}
+
+.contactheading  {
+	font-size: 40px; 
+	text-align: center; 
+	background-color: darkgreen;
+	color: white; 
+}
+	
+/* Content Formatting*/ 
+.contentformat { 
+	font-size: 20px;
+	font-weight: bold; 
+	text-align: center; 
+} 
+
+
+/*Images Formatting*/
+.center { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} 
+
+.border {  
+	width: 500px;  
+	margin-left:auto; 
+	margin-right:auto;
+}
+	
+		
+
+/* Styles the links at the bottom of the Home Page*/
+#link1:visited{ 
+	color:black;  
+}
+#link1:link{
+	color:blue; 
+}
+#link2:visited{
+	color:black;
+}
+#link2:link{
+	color:blue; 
+}
+ 	
+

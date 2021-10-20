@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html> 
+<!-- This website is a virtual gallery for my artwork. It shows and describes 5 pieces I created and provides links to other websites which display my work//-->
+<head>  
+<!-- rel tag specifies the realationship between the current document and the linked document.-->
+<link rel="stylesheet" href="Project2.css">
+<title>"Megan's Virtual Art Gallery"</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- The viewport is the user's visible area of a web page.
+ It varies with the device - it will be smaller on a mobile phone than on a computer screen.-->
+</head>  
+
+<!-- Horizontal Navigation Bar. - Allows the user to navigate through the website--> 
+<!-- ### Create a webpage for each link nd update the content###-->
+<ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
+
+
+<h1>Welcome to Megan's Virtual Art Gallery</h1> 
+<!-- declares this paragraph 1. Referred to in Css sheet. Id in this case is unique-->
+<p id=para1> This is an art gallery which displays 5 unique pieces .</p>
+
+<body>
+<section>
+<img src="Eye.jpg" alt="Drawing of an Eye" />  
+</section>
+
+<!-- It is easy to work around, just use an ID and "target" the image with those style parameters-->
+<p> This is a gkjgxjklfngxfjklngbfkljnblxfkjnb <img src="Flower1.jpg" alt="Drawing of a Flower" </p> 
+<img src="Lion.jpg" alt="Drawing of a Lion" /> 
+<img src="Mountain.jpg" alt="Drawing of a Mountain" />
+<img src="Music.jpg" alt="Drawing of a Woman" />
+<p>
+<!-- target ="_blank" allows new window to be opened after clicking link-->
+Thank you for visiting my webpage! If you really like my artwork, you can find more  <a id="link1" href="https://www.deviantart.com/indigokid17//" target ="_blank"> here </a> and <a id="link2" href="https://www.deviantart.com/indigokid16" target ="_blank"> here. </a>
+</p>
+<!-- use <br> for line breaks>
+</body>
+</html>
