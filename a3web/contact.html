@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="stylesheet" href="css/customizing.css">
+  <title>Contact Us</title>
+  <script src="js/contactus.js"></script>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<!-- GEOM 101 Group Assignment Template
+Last Modified November 23 2021 by Ashley Ford -->
+
+<!-- Logo here -->
+<img class="logo" src="images/navspacelogo.png" alt="NavSpaceLogo" id="home" >
+
+<!-- Taken from and adapted from https://www.w3schools.com/css/css_navbar.asp and https://www.w3schools.com/css/css_dropdowns.asp-->
+
+<!-- NavBar here -->
+<div class="navbar">
+<div>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="servicespage.html">Our Services</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Our Team</a>
+    <div class="dropdown-content">
+      <a href="profile1.html">Abbilash Uthayakumar</a>
+      <a href="profile2.html">Ashley Ford</a>
+      <a href="profile3.html">Mark Vandam</a>
+      <a href="profile4.html">Megan Trotman</a>
+      <a href="profile5.html">Sai Pradeep Muppavarapu</a>
+    </div>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Start general body of the page below -->
+<div class="bigimage"><h1>Get in Touch Today!</h1></div>
+
+<div class="card">
+  <h2>Questions? Comments?</h2>
+  <p> We'd love to hear from you!</p>
+  <p>Just fill in the form and someone will get back to you in a timely fashion.</p>
+</div>
+
+<!-- Image to break up the text here -->
+<div class="buffer">Contact Form</div>
+  <form name="contactUs">
+    <table>
+      <tr>
+        <td>
+          <label class="texboxlab" for="name">Name: </label>
+        </td>
+        <td>
+          <input class="texbox" id="name" name="name" type="text" placeholder="Your Name">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label class="texboxlab" for="email">Email: </label>
+        </td>
+        <td>
+          <input class="texbox" id="email" name="email" type="text" placeholder= "Your Email">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label class="texboxlab" for="comments">Comments: </label>
+        </td>
+        <td>
+          <textarea class="texbox" id="comments" name="comments" rows="10" cols="60"  placeholder= "Your Questions or Comments"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>               
+          <input type="button" class="backtotopbutton texbox" value="Submit" onClick="contactRequest(this.form)">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+<!-- Text box about additional info 
+    <div class="card">
+      <h2>Some text</h2>
+      <p>Look no further, our team of experts can provide just that!</p>
+      <div class="imagebox">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+</div>
+text box width 457pix -->
+
+<div class="buffer"></div>
+
+<!-- Footer here -->
+<div class="footer">
+  <p class="footertext">&copy; 2021 Navscape Geospatial Solutions</p>
+  <p class="footertext"><a class="backtotopbutton" href="#home">Back To Top</a></p>
+</div>
+
+<!-- End of document/page -->
+</body>
+</html>

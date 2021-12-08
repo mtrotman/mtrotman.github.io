@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/* GEOM 101 Group Website Assignment (2)
+External CSS File for formatting
+Author: Ashley Ford
+Last Modified on: November 24 2021 */
+
+/* COLOUR CODES FOR THEME HERE
+
+Almost black = #0B0C10
+
+Navy Grey = #1F2833
+
+Blue Dark Grey = #4e4e55
+
+Bright teal = #66FCF1
+
+Dark teal = #45A29E
+
+ */
+
+
+/* ----------------------------------------- */
+/* General Settings here */
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+  font-family: Arial;
+  color: #f1f1f1;
+  padding: 0px;
+  background-image: url('../images/background.jpg');
+}
+
+h1 {
+  font-size: 50px;
+  color: #45A29E;
+  text-align: center;
+}
+
+.services{
+    font-size: 50px;
+    color: #66FCF1;
+    text-align: center;
+  }
+
+/* ----------------------------------------- */
+/* Styling the nav bar starts here */
+ul { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1F2833;
+  }
+
+.navbar {
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  /*max-width: 100%;
+  width:auto; */
+}
+.navbar div {
+  flex: 1 1 auto;
+}
+  
+li {
+    display: inline;
+    /*float: left;*/
+} 
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #45A29E;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #C5C6C7;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+/* --------------------------------------- */
+/* Stuff for The Body of Page Starts Here */
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: auto;
+  padding-right: 5px;
+}
+
+/* This section contains the formatting for the image div tables */
+/* Styling for this taken from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp and adapted */
+/* Image container styling sections below for column and row (basically a makeshift table*/
+.column {
+  float: left;
+  width: auto;
+  height: auto;
+  padding: 5%;
+}
+
+/* -------------- */
+/* Stuff for images goes here */
+
+.headshot{
+  border-radius: 50%;
+}
+
+/* Image box */
+.imagebox {
+  background-color: #4e4e55;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+/* Big heading image */
+.bigimage {
+  background-image: url("../images/gradient.png");
+  width: 100%;
+  padding: 20px;
+  height: 300px;
+}
+
+/* --------------- */
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  background: rgb(41, 41, 41);
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+/* Footer text format */
+.footertext{
+  display: block;
+  padding: 10px;
+  text-align: center;
+  background: rgb(41, 41, 41);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Section to visually buffer between portions of text */
+.buffer {
+  background-color: #4e4e55;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+/* Back to Top Button */
+.backtotopbutton {
+background-color: #45A29E;
+border: none;
+color: white;
+padding: 15px 32px;
+width: 200px;
+text-decoration: none;
+border-radius: 5px;
+font-size: 16px;
+}
+
+/* Back to Top Hover Colour */
+.backtotopbutton:hover {
+  background-color: #66FCF1;
+}
+
+.texbox {
+  width: 350px;
+}
+.texboxlab {
+  vertical-align: top;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn {   
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .ul a {
+    float: none;
+    width: 100%;
+  }
+}
+
